@@ -7,7 +7,7 @@ get = (ind) => {
     const elemn = document.querySelector(ind);
     return elemn;
   } else if (ind.slice(0, 1) === "#"){ // id
-    const elemn = document.getElementById(ind);
+    const elemn = document.getElementById(ind.substring(0));
     return elemn;
   } else if (ind.slice(0, 1) === "_"){ // name
     const elemn = documnet.getElementById(ind);
